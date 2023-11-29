@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Center the form vertically */
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input {
+  color: #000000;
+  border: 1;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.text{
+    font-size: 30px;
+}
+</style>
+<body>
+    <div class="form-container">
+            <form action="/chatroom" method="post">
+                <label for="username" class="text"> USERNAME : </label>
+                <input type="text" name="username" required>
+                <button type="submit">OK</button>
+            </form>
+    </div>
+
+</body>
+</html>
